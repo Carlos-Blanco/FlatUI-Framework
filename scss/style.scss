@@ -1,3 +1,16 @@
+/*------------------------------------*\
+    $STYLE
+\*------------------------------------*/
+/**
+ * SYTLE............All stylesheets compilation!
+ * RESET............Normalizer reset
+ * VARIABLES........All framework variables
+ * FONTS............Tipography
+ */
+
+
 @import "normalizer";
 @import "variables";
-@import "_fonts";
+@import "fonts";
+@import "common";
+@import "custom";
