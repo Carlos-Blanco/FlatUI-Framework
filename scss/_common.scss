@@ -1,3 +1,28 @@
 /*------------------------------------*\
     $COMMON
 \*------------------------------------*/
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.fit {
+	width: 100%;
+}
