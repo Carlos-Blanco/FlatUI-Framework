@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insurer Framework</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.code {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin: 20px 0;
+			padding: 30px 0;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		header {
+			background-color: #222;
+			position: fixed;
+			top:0;
+			width: 100%;
+		}
+		h2 {
+			padding-top: 100px;
+		}
+		nav {
+			margin: 0 auto;
+			max-width: 1200px;
+		}
+		nav li{
+			cursor: pointer;
+			display: inline-block;
+			font-weight: bold;
+			height: 55px;
+			text-align: center;
+			width: 14.25%;
+		}
+		nav li a {
+			color: #fff;
+			display: block;
+			font-size: 16px;
+			padding: 17.5px;
+			text-decoration: none;
+			width: 100%;
+		}
+		nav li a:hover {
+			background-color: #15ad9f;
+			color: #fff;
+		}
+	</style>
+</head>	
+<body>
+	<header>
+		<nav>
+			<li><a href="#grid">Grid</a></li><li><a href="#tipo">Tipografía</a></li><li><a href="#icons">Iconos</a></li><li><a href="#buttons">Botones</a></li><li><a href="#forms">Formularios</a></li><li><a href="#tables">Tablas</a></li><li><a href="#abstrats">Abstrats</a></li>
+		</nav>
+	</header>
+	<div style="margin: 50px;">
+        <h2 id="grid" class="text-primary">Grid System</h2>
+        <p>El framework esta hecho con un grid de 12 columnas responsive que se adapta al 100% del ancho del elemento contenedor.</p>
+        <div class="section group">
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		  <div class="col span_1_of_12 blue color-white">.col span_1_of_12</div>
+		</div>
+		<p>Usando la clase <strong>col</strong> mas <strong>span_n_of_ntotal</strong>, donde n es el numendo de columnas que quieres que ocupe y ntotal el numero total de columnas</p>
+		<div class="section group">
+          	<div class="col span_1_of_3 pink color-white">
+          		This is column 1
+          	</div>
+          	<div class="col span_2_of_3 pink color-white">
+          		This is column 2
+          	</div>
+        </div>
+		<div class="code">
+	    	<pre>
+	    	   	&lt;div class="section group"&gt;
+	        		&lt;div class="col span_1_of_3"&gt;1 columnas&lt;/div&gt;
+	        		&lt;div class="col span_2_of_3"&gt;2 columnas&lt;/div&gt;
+	        	&lt;/div&gt;</pre>
+		</div>
+		<h2 id="tipo">Tipografia</h2>
+		<p>Contiene el estilo tipografico de de HealthConnect</p>
+		<h1>Header 1</h1>
+		<div class="code">
+	    	<pre>
+        		&lt;h1&gt;Header 1&lt;h1&gt;</pre>
+		</div>
+		<p>Paragraph</p>
+		<div class="code">
+	    	<pre>
+        		&lt;p&gt;Paragraph&lt;p&gt;</pre>
+		</div>
+		<a href="">Link</a>
+		<div class="code">
+	    	<pre>
+        		&lt;a href="#"&gt;Link&lt;a&gt;</pre>
+		</div>
+		<h2 id="icons">Iconografia</h2>
+		<p>Se ha añadido la libreria de iconos de fuentes <a href="http://fontawesome.io/" target="_blank">FontAwesome.</a></p>
+		<p>Listado de <a href="http://fontawesome.io/icons/" target="_blank">Iconos</a> que se puede usar.</p>
+		<a href="#"><i class="fa fa-ambulance"></i>Ambulance</a>
+		<div class="code">
+	    	<pre>
+        		&lt;a href="#"&gt;
+        			&lt;i class="fa fa-ambulance"&gt;Ambulance&lt;/i&gt;
+        		&lt;/a&gt;</pre>
+		</div>
+		<p>Utilizando la clase <strong>.fa-spin</strong> se animan los iconos con una rotacion de 360º</p>
+		<ul class="fa-ul">
+				  <li><i class="fa-li fa fa-spinner fa-spin"></i>Spinner</li>
+				</ul>
+		<div class="code">
+	    	<pre>
+				&lt;ul class="fa-ul"&gt;
+				  &lt;li&gt;&lt;i class="fa-li fa fa-spinner fa-spin"&gt;&lt;/i&gt;to replace&lt;/li&gt;
+				&lt;/ul&gt;</pre>
+		</div>
+		<p>Utilizando la clase <strong>.fa-spin</strong> se animan los iconos con una rotacion de 360º</p>
+		<p><i class="fa fa-stethoscope fa-3x"></i>Tamaño 3x</p>
+		<div class="code">
+	    	<pre>
+				&lt;p&gt;&lt;i class="fa fa-stethoscope fa-3x"&gt;&lt;/i&gt; Doctor&lt;/p&gt;</pre>
+		</div>
+		<h2 id="buttons">Botones</h2>
+		<p>Introducir botones es tan sencillo como usar la etiqueta <strong>button</strong> y cogera el estilo automaticamente</p>
+		<button>Botón</button>
+		<div class="code">
+	    	<pre>
+				&lt;button&gt;Botón&lt;/button&gt;</pre>
+		</div>
+		<p>A los botones tambien se les puede añadir iconos de la misma forma que vimos anteriormente</p>
+		<button><i class="fa fa-save"></i>Guardar</button>
+		<div class="code">
+	    	<pre>
+				&lt;button&gt;&lt;i class="fa fa-save"&gt;&lt;/i&gt;Guardar&lt;/button&gt;</pre>
+		</div>
+		<p>Mediante la clase <strong>.fit</strong> conseguimos que coja un ancho del 100%; del contenedor.</p>
+		<button class="fit"><i class="fa fa-medkit"></i>Botiquin</button>
+		<div class="code">
+	    	<pre>
+			&lt;button class="fit"&gt;&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;Botón&lt;/button&gt;</pre>	        		
+		</div>
+		<h2 id="forms">Formularios</h2>
+		<p>Los formularios basicamente cogen el estilo estandar de cada navegador tal y como estan en el estilo actual</p>
+		<h3>Label:</h3>
+		<label for="">Label:</label>
+		<div class="code">
+	    	<pre>
+			&lt;label&gt;Label&lt;/label&gt;</pre>	        		
+		</div>
+		<h3>Input:</h3>
+		<p>Para introducir un input con su correspondiente label se haria de la siguiente forma</p>
+		<label for="">Nombre:</label>
+		<input>
+		<div class="code">
+	    	<pre>
+			&lt;label&gt;Nombre:&lt;/label&gt;&lt;input&gt;</pre>	        		
+		</div>
+		<p>Si se quiere posicionar el input debajo se añade al label la clase <strong>clearfix</strong></p>
+		<label for="" class="clearfix">Nombre:</label>
+		<input>
+		<div class="code">
+	    	<pre>
+			&lt;label class="clearfix"&gt;Nombre:&lt;/label&gt;&lt;input&gt;</pre>
+		</div>
+		<h3>Select:</h3>
+		<label for="">Selecciona un Producto:</label>
+		<select name="" id="">Selecciona un Producto
+			<option value="">SaludOnNet clínica</option>
+			<option value="">SaludOnNet aseguradora</option>
+			<option value="">SaludOnNet paciente</option>
+		</select>
+		<div class="code">
+	    	<pre>
+	    		&lt;label&gt;Selecciona un Producto:&lt;/label&gt;
+			&lt;select name="" id=""&gt;Selecciona un Producto
+				&lt;option value=""&gt;SaludOnNet clínica&lt;/option&gt;
+				&lt;option value=""&gt;SaludOnNet aseguradora&lt;/option&gt;
+				&lt;option value=""&gt;SaludOnNet paciente&lt;/option&gt;
+			&lt;/select&gt;</pre>
+		</div>
+		<h3>Textarea:</h3>
+		<p>Tambien se pueden crear elementos con la clase <strong>w*</strong> para establecer un ancho. (Ejemplo: la clase w500 establece un ancho de 500px.)</p>
+		<label for="" class="clearfix">Introduce tu mensaje:</label>
+		<textarea name="" id="" cols="30" rows="7" class="w500"></textarea>
+		<div class="code">
+			<pre>
+		    		&lt;label&gt;Introduce tu mensaje:&lt;/label&gt;
+				&lt;textarea id="" class="w500"&gt;&lt;/textarea&gt;</pre>
+		</div>
+		<h3>Checkboxes:</h3>
+		<p>Se realizan igual que en elemntos anteriores</p>
+		<p>Selecciona los productos en los que estes interesado:</p>
+		<div class="section group">
+		  <div class="col span_1_of_4">
+		  	<input type="checkbox">
+		  	<label for="">SaludOnNet pacientes</label>
+		  </div>
+		  <div class="col span_1_of_4">
+		  	<input type="checkbox">
+		  	<label for="">SaludOnNet clinica</label>
+		  </div>
+		  <div class="col span_1_of_4">
+		  	<input type="checkbox">
+		  	<label for="">SaludOnNet aseguradora</label>
+		  </div>
+		  <div class="col span_1_of_4">
+		  	<input type="checkbox">
+		  	<label for="">eQualmed</label>
+		  </div>
+		</div>
+		  <br>
+		  <div class="code">
+		  	<pre>
+		  		&lt;p&gt;Selecciona los productos en los que estes interesado:&lt;/p&gt;
+		  		&lt;div class="section group"&gt;
+					&lt;div class="col span_1_of_4"&gt;
+					  	&lt;input type="checkbox"&gt;
+						&lt;label for=""&gt;SaludOnNet pacientes&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class="col span_1_of_4"&gt;
+					  	&lt;input type="checkbox"&gt;
+					  	&lt;label for=""&gt;SaludOnNet clinica&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class="col span_1_of_4"&gt;
+					  	&lt;input type="checkbox"&gt;
+					  	&lt;label for=""&gt;SaludOnNet aseguradora&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class="col span_1_of_4"&gt;
+					  	&lt;input type="checkbox"&gt;
+					  	&lt;label for=""&gt;eQualmed&lt;/label&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;</pre>
+		  </div>
+		
+		<h2 id="goodies">Goodies</h2>
+		<p>Componentes adicionales del framework</p>
+		<h3>Mensajes</h3>
+		<p class="message-info">Este es un mensaje informativo</p>
+		 <div class="code">
+		  	<pre>
+		  		&lt;p class="message-info"&gt;Este es un mensaje informativo&lt;/p&gt;</pre>
+		  </div>
+		<p class="message-success">Este es un mensaje de exito</p>
+		<div class="code">
+		  	<pre>
+		  		&lt;p class="message-success"&gt;Este es un mensaje de exito&lt;/p&gt;</pre>
+		</div>
+		  <p class="message-error">Este es un mensaje de error</p>
+		<div class="code">
+		  	<pre>
+		  		&lt;p class="message-error"&gt;Este es un mensaje de error&lt;/p&gt;</pre>
+		</div>		
+		<h2 id="tables">Tablas</h2>
+		<p>Las tablas estan configuradas para que hereden el estilo de SaludOnNet aseguradora.</p>
+			<table class="fit">
+              <thead>
+                <tr>
+                  <th class="w100">Enero</th>
+                  <th class="w200">Febrero</th>
+                  <th class="w300">Marzo</th>
+                  <th class="w400">Abril</th>
+                  <th class="w100">Mayo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>125</td>
+                  <td>354</td>
+                  <td>554</td>
+                  <td>354</td>
+                  <td><a href=""><i class="fa fa-save"></i>Guardar</a></td>
+                </tr>
+                <tr>
+                  <td>354</td>
+                  <td>354</td>
+                  <td>454</td>
+                  <td>354</td>
+                  <td><a href=""><i class="fa fa-save"></i>Guardar</a></td>
+                </tr>
+                <tr>
+                  <td>354</td>
+                  <td>354</td>
+                  <td>234</td>
+                  <td>354</td>
+                  <td><a href=""><i class="fa fa-save"></i>Guardar</a></td>
+                </tr>
+                <tr>
+                  <td>864</td>
+                  <td>354</td>
+                  <td>354</td>
+                  <td>564</td>
+                  <td><a href=""><i class="fa fa-save"></i>Guardar</a></td>
+                </tr>
+              </tbody>
+            </table>
+        <div class="code">
+        	<pre>
+		  &lt;table class="fit"&gt;
+	              &lt;thead&gt;
+	                &lt;tr&gt;
+	                  &lt;th class="w100"&gt;Enero&lt;/th&gt;
+	                  &lt;th class="w200"&gt;Febrero&lt;/th&gt;
+	                  &lt;th class="w300"&gt;Marzo&lt;/th&gt;
+	                  &lt;th class="w400"&gt;Abril&lt;/th&gt;
+	                  &lt;th class="w100"&gt;Mayo&lt;/th&gt;
+	                &lt;/tr&gt;
+	              &lt;/thead&gt;
+	              &lt;tbody&gt;
+	                &lt;tr&gt;
+	                  &lt;td&gt;125&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;554&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;&lt;a href=""&gt;&lt;i class="fa fa-save"&gt;&lt;/i&gt;Guardar&lt;/a&gt;&lt;/td&gt;
+	                &lt;/tr&gt;
+	                &lt;tr&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;454&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;&lt;a href=""&gt;&lt;i class="fa fa-save"&gt;&lt;/i&gt;Guardar&lt;/a&gt;&lt;/td&gt;
+	                &lt;/tr&gt;
+	                &lt;tr&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;234&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;&lt;a href=""&gt;&lt;i class="fa fa-save"&gt;&lt;/i&gt;Guardar&lt;/a&gt;&lt;/td&gt;
+	                &lt;/tr&gt;
+	                &lt;tr&gt;
+	                  &lt;td&gt;133&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;354&lt;/td&gt;
+	                  &lt;td&gt;564&lt;/td&gt;
+	                  &lt;td&gt;&lt;a href=""&gt;&lt;i class="fa fa-save"&gt;&lt;/i&gt;Guardar&lt;/a&gt;&lt;/td&gt;
+	                &lt;/tr&gt;
+	              &lt;/tbody&gt;
+	            &lt;/table&gt;</pre>
+        </div>
+        <h2 id="abstrats">Abstrats</h2>
+		<p>Existen clases estandar que nos ayudan a dar estilo a el documento.</p>
+		<h3>Position</h3>
+		<p><strong>.relative</strong> Posicion relativa.</p>
+		<p><strong>.absolute</strong> Posicion absoluta.</p>
+		<p><strong>.clearfix</strong> Hace un clear en el elemento.</p>
+		<p><strong>.left</strong> Float left.</p>
+		<p><strong>.right</strong> Float right.</p>
+		<p><strong>.t(n)</strong> top: (n)px Ejemplo: .t5 => top:5px.</p>
+		<p><strong>.b(n)</strong> bottom: (n)px Ejemplo: .b5 => bottom:5px.</p>		
+		<p><strong>.l(n)</strong> left: (n)px Ejemplo: .l5 => left:5px.</p>
+		<p><strong>.r(n)</strong> right: (n)px Ejemplo: .r5 => right:5px.</p>
+
+		<br>
+		<h3>Layout</h3>
+		<p><strong>.hide,.hidden</strong> Display none.</p>
+		<p><strong>.visible</strong> Display block.</p>
+		<br>
+		<h3>Aligns</h3>
+		<p><strong>.align_center</strong> Text align center.</p>
+		<p><strong>.align_right</strong> Text align right.</p>
+		<p><strong>.align_left</strong> Text align left.</p>
+		<p><strong>.align_justify</strong> Text align justify.</p>
+		<br>	
+		<h3>Elastics widths</h3>
+		<p><strong>.e(n)</strong> width: (n)% Ejemplo: .e30 => width:30%;</p>
+		<br>	
+		<h3>Fixed widths</h3>
+		<p><strong>.w(n)</strong> width: (n)px Ejemplo: .w100 => width:100px;</p>
+		<br>
+		<h3>Fixed heigths</h3>
+		<p><strong>.h(n)</strong> height: (n)px Ejemplo: .h100 => height:100px;</p>
+		<br>
+		<h3>Line heigths</h3>
+		<p><strong>.lh(n)</strong> line-height: (n)px Ejemplo: .lh50 => line-height:5px;</p>
+		<br>
+		<h3>Margins</h3>
+		<p><strong>.m(n)</strong> margin: (n)px Ejemplo: .m50 => margin:50px;</p>
+		<p><strong>.mt(n)</strong> margin-top: (n)px Ejemplo: .mt50 => margin-top:50px;</p>
+		<p><strong>.mr(n)</strong> margin-right: (n)px Ejemplo: .mr50 => margin-right:50px;</p>
+		<p><strong>.mb(n)</strong> margin-bottom: (n)px Ejemplo: .mb50 => margin-bottom:50px;</p>
+		<p><strong>.ml(n)</strong> margin-left: (n)px Ejemplo: .ml50 => margin-left:50px;</p>
+		<br>
+		<h3>Paddings</h3>
+		<p><strong>.p(n)</strong> padding: (n)px Ejemplo: .p50 => padding:50px;</p>
+		<p><strong>.pt(n)</strong> padding-top: (n)px Ejemplo: .pt50 => padding-top:50px;</p>
+		<p><strong>.pr(n)</strong> padding-right: (n)px Ejemplo: .pr50 => padding-right:50px;</p>
+		<p><strong>.pb(n)</strong> padding-bottom: (n)px Ejemplo: .pb50 => padding-bottom:50px;</p>
+		<p><strong>.pl(n)</strong> padding-left: (n)px Ejemplo: .pl50 => padding-left:50px;</p>
+		<br>
+		<h3>Opacity</h3>
+		<p><strong>.opacity_(n)</strong> opacity: 0.n Ejemplo: opacity_5 => opacity: 0.5.</p>
+		<br>
+		<h3>Colors</h3>
+		<p><strong>.color-blue*</strong> color: blue. (*blue, green, red, pink, purple, white)</p>
+		<p><strong>.blue*</strong> background-color: blue. (*blue, green, red, pink, purple, white)</p>
+	</div>
+  </body>
+</html>
