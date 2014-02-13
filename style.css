@@ -3493,40 +3493,34 @@ th {
  /*  COLORS
 --------------------------------------------------------------------------- */
 .color-blue {
-  color: #009DE0 !important; }
+  color: #6292cc !important; }
 
 .color-green {
-  color: #8EBD4F !important; }
+  color: #57b266 !important; }
 
-.color-purple {
-  color: #9A4D91 !important; }
-
-.color-pink {
-  color: #E66293 !important; }
+.color-yellow {
+  color: #f0cf0c !important; }
 
 .color-red {
-  color: red !important; }
-
-.color-white {
-  color: white !important; }
+  color: #fc8670 !important; }
 
 .color-gray {
-  color: #cccccc !important; }
+  color: #fc8670 !important; }
 
 .blue {
-  background-color: #009DE0 !important; }
+  background-color: #6292cc !important; }
 
 .green {
-  background-color: #8EBD4F !important; }
-
-.purple {
-  background-color: #9A4D91 !important; }
-
-.pink {
-  background-color: #E66293 !important; }
+  background-color: #57b266 !important; }
 
 .red {
-  background-color: red !important; }
+  background-color: #fc8670 !important; }
+
+.yellow {
+  background-color: #f0cf0c !important; }
+
+.gray {
+  background-color: #cecece !important; }
 
 /*------------------------------------*\
     $GRID
