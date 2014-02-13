@@ -6,12 +6,19 @@
  * RESET............Normalizer reset
  * VARIABLES........All framework variables
  * FONTS............Tipography
+ * ICONS............FontAwesome IconFonts
+ * ABSTRACTS........Abstract styles
+ * GRID.............12 columns responsive grid
+ * COMMON...........common styles
+ * CUSTOM...........custom style
  */
 
 
 @import "reset";
 @import "variables";
 @import "fonts";
+@import "icons";
+@import "abstracts";
 @import "grid";
 @import "common";
 @import "custom";
