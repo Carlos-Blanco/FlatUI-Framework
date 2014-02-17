@@ -3,12 +3,31 @@
 \*------------------------------------*/
 
 button {
- 	background-color: $color-blue;
  	height: 50px;
 	width: 200px;
 }
 
 a.button {
- 	height: 50px;	
+	background-color: $color-gray;
+	color: #fff;
+	display: block;
+ 	height: 45px;
+ 	line-height: 2.9;
+ 	padding-left: 40px;
+ 	position: relative;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
 	width: 200px;
+}
+
+a.button:before {
+	background-color: rgba(0,0,0,.1);
+	content: "\f054";
+	display: inline-block;
+	font-family: FontAwesome;
+	height: 45px;
+	position: absolute;
+	left: 0;
+	width: 45px;
 }

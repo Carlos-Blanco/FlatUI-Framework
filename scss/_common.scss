@@ -2,6 +2,12 @@
     $COMMON
 \*------------------------------------*/
 
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+
 .clearfix {
     zoom:1;
     &:before, &:after {
