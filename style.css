@@ -4171,6 +4171,15 @@ footer {
     .input-wrapper button:active + input {
       border-color: #3e77bd; }
 
+input[type="checkbox"] {
+  display: none; }
+
+label.checkbox span.icons {
+  font-family: 'Fontawesome';
+  background-color: #57b266;
+  height: 20px;
+  width: 20px; }
+
 /*------------------------------------*\
     $COMMON
 \*------------------------------------*/
