@@ -3550,6 +3550,9 @@ a.button:before {
 .color-gray {
   color: #fc8670 !important; }
 
+.color-white {
+  color: white !important; }
+
 .blue {
   background-color: #6292cc !important; }
 
@@ -4160,6 +4163,11 @@ footer {
   width: 45px; }
   .input-wrapper button:focus {
     outline: none; }
+  .input-wrapper button:active {
+    background-color: #3e77bd;
+    border-color: #3e77bd; }
+  .input-wrapper button:active + input {
+    border-color: #3e77bd; }
 
 /*------------------------------------*\
     $COMMON

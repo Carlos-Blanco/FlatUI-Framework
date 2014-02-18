@@ -28,5 +28,12 @@
 		&:focus {
 			outline: none;
 		}
+		&:active {
+			background-color: darken($color-blue,10%);
+			border-color: darken($color-blue,10%);
+		}
+		&:active + input {
+			border-color: darken($color-blue,10%);
+		}
 	}
 }
