@@ -4142,32 +4142,34 @@ footer {
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
-.input-wrapper input {
-  border: 1px solid #cecece;
-  height: 45px;
-  padding-left: 1em;
-  vertical-align: top;
-  width: 160px; }
-  .input-wrapper input:focus {
-    outline: none;
-    border-color: #6292cc; }
-  .input-wrapper input:focus + button {
-    outline: none;
-    background-color: #6292cc;
-    border-color: #6292cc; }
-.input-wrapper button {
-  background-color: #cecece;
-  border: 1px solid #cecece;
-  color: #fff;
-  height: 45px;
-  width: 45px; }
-  .input-wrapper button:focus {
-    outline: none; }
-  .input-wrapper button:active {
-    background-color: #3e77bd;
-    border-color: #3e77bd; }
-  .input-wrapper button:active + input {
-    border-color: #3e77bd; }
+.input-wrapper {
+  display: inline-block; }
+  .input-wrapper input {
+    border: 1px solid #cecece;
+    height: 45px;
+    padding-left: 1em;
+    vertical-align: top;
+    width: 160px; }
+    .input-wrapper input:focus {
+      outline: none;
+      border-color: #6292cc; }
+    .input-wrapper input:focus + button {
+      outline: none;
+      background-color: #6292cc;
+      border-color: #6292cc; }
+  .input-wrapper button {
+    background-color: #cecece;
+    border: 1px solid #cecece;
+    color: #fff;
+    height: 45px;
+    width: 45px; }
+    .input-wrapper button:focus {
+      outline: none; }
+    .input-wrapper button:active {
+      background-color: #3e77bd;
+      border-color: #3e77bd; }
+    .input-wrapper button:active + input {
+      border-color: #3e77bd; }
 
 /*------------------------------------*\
     $COMMON

@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .input-wrapper {
+	display: inline-block;
 	input {
 		border: 1px solid $color-gray;
 		height: 45px;
