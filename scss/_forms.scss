@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+.input-wrapper {
+	input {
+		border: 1px solid $color-gray;
+		height: 45px;
+		padding-left: 1em;
+		vertical-align: top;
+		width: 160px;
+		&:focus {
+			outline: none;
+			border-color: $color-blue;
+		}
+		&:focus + button{
+			outline: none;
+			background-color: $color-blue;
+			border-color: $color-blue;
+		}
+	}
+	button {
+		background-color: $color-gray;
+		border: 1px solid $color-gray;
+		color: #fff;
+		height: 45px;
+		width: 45px;
+		&:focus {
+			outline: none;
+		}
+	}
+}
